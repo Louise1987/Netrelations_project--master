@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>ArbetsProv</title>
+
+    <meta name="viewport" content="Width=Device-width,initial-scale=1">
+  
+    <link href="Styles.css" rel="Stylesheet">
+</head>
+<body>
+       
+<!--detta är sök fältet plus sök knappen --->
+<div class="search-field" id="city-block">
+    <form action="" method="get" id="search-form" class="search-field__form">
+    <label class="search-field__label visually-hidden" for="search-input">Ange stad eller land</label> 
+    <input class="search-field__input" type="search" name="sök" id="search-input" placeholder="Ange stad eller land"/>
+
+    <button class="search-field__button" type="submit">
+        <span class="visually-hidden">Sök efter stad eller land</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="26" focusable="false">
+            <path d="M15.73,18.6a10.14,10.14,0,1,1,2.87-2.87l5.4,5.4L21.13,24ZM5.84,5.84a6.08,6.08,0,1,0,8.6,0A6.07,6.07,0,0,0,5.84,5.84Z" fill="#FFF"/>
+        </svg>
+    </button>
+    </div>
+</form>
+
+<!-- detta är huvud header -->
+<h1>Information om <strong>Stockholm</strong></h1>
+
+<!--detta är artiklerna -->
+<div class="artikel-grid">
+    <ul class="artikel-grid__container">
+        <li class="artikel-grid__block">
+            <div class="artikel-grid__block-content artikel-grid__block-content--bg-blue">
+                <h2 class="artikel-grid__heading">Nodens största stad</h2>
+                <p class="artikel-grid__paragraph">Stockholm är Svergies huvudstad samt landets kulturella, politiska, mediala och ekonomiska centrum. det är Svergies såväl som Nodens folkaste tätort.</p>
+            </div>
+        </li>
+        <li class="artikel-grid__block">
+            <div class="artikel-grid__block-content">
+                <h2 class="artikel-grid__heading">Världarv</h2>
+                <p class="artikel-grid__paragraph">Tre av Unescos världsarv ligger i Stockholmsområdet; Drottningholms slott och Birka (båda i Ekerö kummun), samt Skogskyrkogården (Stockholms kommun).</p>
+            </div>
+         </li>
+        <li class="artikel-grid__block artikel-grid__block--large">
+            <div class="artikel-grid__block-content">
+                <h2 class="artikel-grid__heading">Gamla stan - Staden mellan broarna</h2>
+                <div class="artikel-grid__column-wrapper"> 
+                    <div class="artikel-grid__column">
+                        <p class="artikel-grid__paragraph">Under flera hundra år utgjorde Gamla stan den egentliga staden. Stadsdelen bildades 1926 och hade år 2006 cirka 3000 invånare. på Gamla stans norra spets återfinns Stockholms slott.</p>
+                    </div>
+                    <div class="artikel-grid__column">
+                        <img class="artikel-grid__img" src="img/stockholm.jpg" alt="stockholm" />
+                        <a class="artikel-grid__button" href="Index.html">Läs mer
+                         <svg class="artikel-grid__button-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 24"><path d="M8,12,0,4,4,0,14,10l2,2L4,24,0,20Z" fill="#FFF" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="exp-section">
+    <h2 class="exp-section__heading" >Om tjänsten</h2>
+    <div class="exp-section__content" id="exp-section__aria-controls"> 
+        <p>All information om städerna är hämtad från Wikipedia. Duis aute irure dolor in reprehenderit in volupatet velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+
+<script src="Script.js"></script>
+</body>
+
+</html>

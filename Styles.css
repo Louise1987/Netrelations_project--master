@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: helvetica;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: #666;
+    font-weight: 400;
+}
+
+strong{
+    font-weight: 700;
+    color:#000;
+}
+p{
+    margin:0 0 10px;
+}
+/*------------------------------------Sökfält med sökknapp-------------------------------------------------------*/
+.search-field{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.search-field__form{
+    padding:4em;
+    display: flex;
+    justify-content: center;
+}
+.search-field__input{
+    width: 350px;
+    font-style: italic;
+    background: lavender;
+    border-width: 0em;
+    padding:9px;
+}
+.search-field__button{   
+    background:coral;
+    float: right;  
+    border:0rem;
+    width: 36px;
+}
+.search-field__button:hover{
+    background-color: orangered;
+}
+.search-field__button svg {
+    margin-top: 3px;
+}
+
+/*------------------------------------Artiklar-------------------------------------------------------*/
+.artikel-grid{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.artikel-grid__container{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.artikel-grid__block {
+    padding:1em;
+    flex:0 0 25%;
+}
+.artikel-grid__block-content{
+    background-color:#eee;
+    padding:1em;
+    height:100%;
+}
+.artikel-grid__block-content--bg-blue {
+    background-color: dodgerblue;
+    color:#fff;
+}
+
+.artikel-grid__block--large {
+    flex-basis:50%;
+}
+.artikel-grid__heading{
+    flex-basis: 100%;
+    font-family: helvetica;
+    font-size: 20px;
+    font-weight: 700;   
+}
+.artikel-grid__column-wrapper{
+    display: flex;
+    margin: -10px;
+}
+.artikel-grid__column{
+    flex: 1 0 50%;
+    padding: 10px;
+}
+.artikel-grid__paragraph{
+    font-family: helvetica;
+    font-size: 14px;
+    font-weight: 400;
+}
+.artikel-grid__column,
+.artikel-grid__img{
+    max-width: 100%;
+}
+.artikel-grid__button{
+    display: inline-flex;
+    padding:10px 16px;
+    margin: 5px 0;
+    font-weight:700;
+    color: #fff;
+    background-color: #666;
+    float:right; 
+}
+.artikel-grid__button-svg{
+    height: 16px;
+    margin-left: 8px;    
+}
+/*------------------------------------Media query för artiklar-------------------------------------------------------*/
+@media screen and (max-width:799px){
+    .artikel-grid__block {
+        flex-basis: 50%;
+    }
+    .artikel-grid__block--large {
+        flex-basis:100%;
+    }
+}
+
+@media screen and (max-width:399px){
+    .artikel-grid__block {
+        flex-basis: 100%;
+        padding: 0.5em 1em;
+    }
+}
+/*------------------------------------om tjänsten drop down-------------------------------------------------------*/
+.exp-section{
+    max-width: 850px;
+    margin: 0 auto;
+    
+}
+.exp-section__heading, 
+.exp-section__button{
+    font-size: 11px;
+    font-weight: 400;
+    text-decoration: underline;
+    display: block;
+    color: gray;
+}
+.exp-section__content--hidden{
+    display: none;
+}
+.exp-section__button{
+    margin-bottom: 10px;
+    border: 0;
+    padding: 0;
+    background-color: white;
+}
+.exp-section__content{
+    font-size: 10px;
+    font-weight: 400;
+    color: gray;
+}
+
+/*------------------------------------Döljer----------------------------------------------------------*/
+.visually-hidden{
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
